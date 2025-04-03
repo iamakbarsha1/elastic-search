@@ -59,5 +59,19 @@
 - Easy to use and highly scalable
 - scales very well in case of data volumes increase and query throughput
 
-## Overview of the Elastic search
-
+## Overview of the Elastic Stack
+- Elastic Stack:
+	- Technologies and tools developed/maintained by the company who created Elasticsearch BV
+- Consists of:
+	- X-PACK
+	- KIBANA
+	- BEATS
+	- LOGSTASH
+	- ELASTICSEARCH
+- KIBANA:
+	- AN analytics and visualisation platform
+	- Use many built-in visualisation
+	- Can manage parts of Elasticsearch and Logstash such as Authentication and Authorization
+	- **Web interface for the data stores in the Elasticsearch**
+	- Build dashboards with number of metrics!
+	- 
