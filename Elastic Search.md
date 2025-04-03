@@ -74,4 +74,34 @@
 	- Can manage parts of Elasticsearch and Logstash such as Authentication and Authorization
 	- **Web interface for the data stores in the Elasticsearch**
 	- Build dashboards with number of metrics!
+- LOGSTASH:
+	- Used to process logs from applications and send them to Elasticsearch
+	- Evolved to general purpose tool:
+		- **It is a data processing pipeline**
+	- Data that LOGSTASH receives will be handled as events which can be anything of your choice
+		- Such as
+			- Log file entires
+			- e-commerce orders
+			- customers
+			- chat messages
+		- These events are then processes by Logstash and shipped off to one or more destinations
+			- Eg:
+				- Elasticsearch
+				- a kafka queue
+				- email message
+				- to an HTTP endpoint
+	- LOGSTASH pipeline consists of 3 parts/stages:
+		- Inputs
+		- Filters
+		- Outputs 
+	- Each stage can make use of a so called **PLUGIN**
+	- Inputs:
+		- **Are how logstash receives events**
+		- A input plugin could be a file for instance meaning that Logstash will read events from a given file
+		- It could also be that we are sending events to Logstash over HTTP, or we could look up rows from a relational database, or listen to a Kafka queue.
+	- Filters:
+		- **Are all about how the Logstash should process them**
+		- We can parse CSV, XML, JSON
+		- Can do data enrichment
+			- such as looking up an IP address and resolving its geographical location.
 	- 
