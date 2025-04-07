@@ -76,8 +76,12 @@
 	- Build dashboards with number of metrics!
 - LOGSTASH:
 	- Used to process logs from applications and send them to Elasticsearch
+	- **It is horizontally scalable!**
 	- Evolved to general purpose tool:
 		- **It is a data processing pipeline**
+	- Logstash PIPELINE s defined in a proprietery markup format that is similar to the JSON, where we can also add if condiitons to make it more dynamic.
+	- ![[image.png]]
+	- ![alt text](image.png)
 	- Data that LOGSTASH receives will be handled as events which can be anything of your choice
 		- Such as
 			- Log file entires
@@ -104,4 +108,11 @@
 		- We can parse CSV, XML, JSON
 		- Can do data enrichment
 			- such as looking up an IP address and resolving its geographical location.
+	- Outputs:
+		- WHere we send the process events to.
+		- **Formally, those places are called STASHES.**
+		- LOGSTASH receives the events from ne or more inputs, process them and send thems to one or more stashes.
+	- ![content_parsed-to-logstash](content_parsed-to-logstash.png)
+- X-Pack:
 	- 
+	
