@@ -81,7 +81,7 @@
 		- **It is a data processing pipeline**
 	- Logstash PIPELINE s defined in a proprietery markup format that is similar to the JSON, where we can also add if condiitons to make it more dynamic.
 	- ![[image.png]]
-	- ![alt text](image.png)
+	- ![image](image.png)
 	- Data that LOGSTASH receives will be handled as events which can be anything of your choice
 		- Such as
 			- Log file entires
